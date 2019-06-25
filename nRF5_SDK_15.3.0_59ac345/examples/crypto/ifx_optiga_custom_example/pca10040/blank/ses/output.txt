@@ -1,0 +1,222 @@
+<info> app: Infineon OPTIGA(TM) Trust X example started
+
+<info> app: Clock init finish
+
+<info> app: Success: CmdLib_OpenApplication(): 0x0000
+<info> app: Read coprocessor UID: version
+<info> app: Trust X firmware version (from coprocessor UID): 1048
+
+<info> app: Printing coprocessor information finished
+
+<info> app: Generating ECC keypair
+<info> app: Public Key:
+<info> app:  8B FC 21 19 9D CB 35 89|..!...5.
+<info> app:  4F BD 38 38 54 42 59 84|O.88TBY.
+<info> app:  5C AA D1 83 77 2E 7A F4|\...w.z.
+<info> app:  3A 44 3E 06 84 74 63 9E|:D>..tc.
+<info> app:  F0 BA 75 2E 0B 80 DE 57|..u....W
+<info> app:  F4 4B B0 E8 22 58 8E 45|.K.."X.E
+<info> app:  DA 9C FA 81 BF 5E B4 77|.....^.w
+<info> app:  A7 F2 F2 34 FC 04 A3 78|...4...x
+<info> app: Keypair export public finished
+
+<info> app: Generating ECC keypair
+<info> app: Private Key:
+<info> app:  20 F4 41 D1 CF 8D 4A 38| .A...J8
+<info> app:  AD 08 A7 AE C0 24 26 8F|.....$&.
+<info> app:  2D 78 8E A1 22 C2 03 32|-x.."..2
+<info> app:  21 5C 83 95 78 33 AC F7|!\..x3..
+<info> app: Public Key:
+<info> app:  68 12 3B 28 CA 7D 45 0A|h.;(.}E.
+<info> app:  CB F2 33 A7 FE 86 12 0B|..3.....
+<info> app:  AA E3 C0 E3 E0 69 4C 68|.....iLh
+<info> app:  C0 20 AE 73 45 0D CE A3|. .sE...
+<info> app:  89 42 4A E7 F5 21 82 58|.BJ..!.X
+<info> app:  D7 E1 5D D2 4A F1 55 7C|..].J.U|
+<info> app:  A5 C6 D3 C4 18 4F D4 2F|.....O./
+<info> app:  02 D6 E6 F3 83 1E 24 EB|......$.
+<info> app: Keypair export private finished
+
+<info> app: Generating shared secrets using OPTIGA
+<info> app: Shared secret 1:
+<info> app:  3A 42 B7 D3 A1 52 CC F1|:B...R..
+<info> app:  9C C0 F0 0A AC 53 4F 6D|.....SOm
+<info> app:  F2 66 24 8E F9 40 04 60|.f$..@.`
+<info> app:  15 63 66 F3 7E 91 5F C6|.cf.~._.
+<info> app: Shared secrets match
+<info> app: ECDH finished
+
+<info> app: Reading Metadata of INFINEON certificate:
+<info> app: Metadata of INFINEON certificate:
+<info> app: HEX dump of 19 bytes
+ 20 13 C0 01 07 C4 02 06| .......
+ C0 C5 02 01 C9 D0 03 E1|........
+ FC 04 D1               |...     
+
+<info> app: Read metadata finished
+
+<info> app: Writing metadata of PRJSPC_2 certificate
+<info> app: Write metadata finished
+
+<info> app: Hashing Infineon certificate
+<info> app: SHA256 of the certificate:
+<info> app: HEX dump of 32 bytes
+ 9A D0 AF 69 1B 4E 26 E3|...i.N&.
+ 1C 77 D8 CE 90 3C 9F 14|.w...<..
+ A1 EC E0 A5 07 CF 68 B0|......h.
+ 37 6F 62 75 4D 78 43 C9|7obuMxC.
+
+<info> app: Writing hash of certificate to arbitrary data object successfull
+<info> app: Hash certificate finished
+
+<info> app: Random data 5 bytes:
+<info> app: HEX dump of 5 bytes
+ CD 8F 69 B9 0B         |..i..   
+
+<info> app: Random data 32 bytes:
+<info> app: HEX dump of 32 bytes
+ 51 BB EE 01 A7 F1 CA 02|Q.......
+ 57 A9 E6 4C 8F 4E F1 BE|W..L.N..
+ 63 8B 60 C6 22 E9 5A 12|c.`.".Z.
+ F7 9D F8 89 5E 4A A7 2A|....^J.*
+
+<info> app: Random data 300 bytes:
+<info> app: HEX dump of 300 bytes
+ 54 2F C1 65 AE 20 01 34|T/.e. .4
+ EF 06 88 79 66 00 85 CD|...yf...
+ 83 3D A4 6C 50 E6 91 C1|.=.lP...
+ 5F AB 50 BC 81 FB 45 5F|_.P...E_
+ 62 7B CE DB 25 0C 16 5D|b{..%..]
+ B0 76 64 5B 74 E7 E4 78|.vd[t..x
+ 05 4E 62 91 87 19 BA F3|.Nb.....
+ EB AC 83 32 14 67 A9 72|...2.g.r
+ 12 F2 84 4C F7 E9 7A A7|...L..z.
+ 50 A9 3A 17 DD D2 98 5F|P.:...._
+
+<info> app: RNG finished
+
+<info> app: Reading/Writing certificate
+<info> app: Certificate Chain [457 bytes]:
+<info> app: HEX dump of 457 bytes
+ C0 01 C6 00 01 C3 00 01|........
+ C0 30 82 01 BC 30 82 01|.0...0..
+ 62 A0 03 02 01 02 02 04|b.......
+ 69 26 51 5B 30 0A 06 08|i&Q[0...
+ 2A 86 48 CE 3D 04 03 02|*.H.=...
+ 30 72 31 0B 30 09 06 03|0r1.0	..
+ 55 04 06 13 02 44 45 31|U....DE1
+ 21 30 1F 06 03 55 04 0A|!0...U..
+ 0C 18 49 6E 66 69 6E 65|..Infine
+ 6F 6E 20 54 65 63 68 6E|on Techn
+
+<info> app: Certificate Chain 2 [457 bytes]:
+<info> app: HEX dump of 457 bytes
+ C0 01 C6 00 01 C3 00 01|........
+ C0 30 82 01 BC 30 82 01|.0...0..
+ 62 A0 03 02 01 02 02 04|b.......
+ 69 26 51 5B 30 0A 06 08|i&Q[0...
+ 2A 86 48 CE 3D 04 03 02|*.H.=...
+ 30 72 31 0B 30 09 06 03|0r1.0	..
+ 55 04 06 13 02 44 45 31|U....DE1
+ 21 30 1F 06 03 55 04 0A|!0...U..
+ 0C 18 49 6E 66 69 6E 65|..Infine
+ 6F 6E 20 54 65 63 68 6E|on Techn
+
+<info> app: Certificate Chain 3 [457 bytes]:
+<info> app: HEX dump of 457 bytes
+ C0 01 C6 00 01 C3 00 01|........
+ C0 30 82 01 BC 30 82 01|.0...0..
+ 62 A0 03 02 01 02 02 04|b.......
+ 69 26 51 5B 30 0A 06 08|i&Q[0...
+ 2A 86 48 CE 3D 04 03 02|*.H.=...
+ 30 72 31 0B 30 09 06 03|0r1.0	..
+ 55 04 06 13 02 44 45 31|U....DE1
+ 21 30 1F 06 03 55 04 0A|!0...U..
+ 0C 18 49 6E 66 69 6E 65|..Infine
+ 6F 6E 20 54 65 63 68 6E|on Techn
+
+<info> app: Certificate (stripped) [448 bytes]:
+<info> app: HEX dump of 448 bytes
+ 30 82 01 BC 30 82 01 62|0...0..b
+ A0 03 02 01 02 02 04 69|.......i
+ 26 51 5B 30 0A 06 08 2A|&Q[0...*
+ 86 48 CE 3D 04 03 02 30|.H.=...0
+ 72 31 0B 30 09 06 03 55|r1.0	..U
+ 04 06 13 02 44 45 31 21|....DE1!
+ 30 1F 06 03 55 04 0A 0C|0...U...
+ 18 49 6E 66 69 6E 65 6F|.Infineo
+ 6E 20 54 65 63 68 6E 6F|n Techno
+ 6C 6F 67 69 65 73 20 41|logies A
+
+<info> app: Certificate in PRJSPC_1 [448 bytes]:
+<info> app: HEX dump of 448 bytes
+ 30 82 01 BC 30 82 01 62|0...0..b
+ A0 03 02 01 02 02 04 69|.......i
+ 26 51 5B 30 0A 06 08 2A|&Q[0...*
+ 86 48 CE 3D 04 03 02 30|.H.=...0
+ 72 31 0B 30 09 06 03 55|r1.0	..U
+ 04 06 13 02 44 45 31 21|....DE1!
+ 30 1F 06 03 55 04 0A 0C|0...U...
+ 18 49 6E 66 69 6E 65 6F|.Infineo
+ 6E 20 54 65 63 68 6E 6F|n Techno
+ 6C 6F 67 69 65 73 20 41|logies A
+
+<info> app: Certificate write finished
+
+<info> app: Signing hash
+<info> app: Signature:
+<info> app: HEX dump of 64 bytes
+ 09 AD C4 CC 83 EF 0F 0A|	.......
+ CD 4A 60 02 75 BD FB 81|.J`.u...
+ 92 CB 98 60 9F BB 2F AC|...`../.
+ 54 16 C6 C8 14 6B FF 89|T....k..
+ 54 F3 81 24 CE B7 88 58|T..$...X
+ 75 9B 2D BA BF 71 5D 33|u.-..q]3
+ E6 99 AF 8C ED 44 68 70|.....Dhp
+ 50 FE 26 F4 B9 69 EE FE|P.&..i..
+
+<info> app: Sign finished
+
+<info> app: Verify: PASS
+<info> app: Verify finished
+<info> app: Verify: PASS
+<info> app: Verify ext finished
+
+<info> app: Secure DFU Example
+<info> app: Current certificate in E0EF:
+<info> app: HEX dump of 316 bytes
+ 30 82 01 38 30 81 DF A0|0..80...
+ 03 02 01 02 02 09 00 83|.....	..
+ 79 AD B5 F1 41 3F C7 30|y...A?.0
+ 0A 06 08 2A 86 48 CE 3D|...*.H.=
+ 04 03 02 30 14 31 12 30|...0.1.0
+ 10 06 03 55 04 03 0C 09|...U...	
+ 44 65 76 65 6C 6F 70 65|Develope
+ 72 30 1E 17 0D 31 38 30|r0...180
+ 39 32 31 30 38 32 37 32|92108272
+ 33 5A 17 0D 32 38 30 39|3Z..2809
+
+<info> app: SHA256 of firmware_binary:
+<info> app: HEX dump of 32 bytes
+ 9C 10 1E AF F4 45 41 B3|.....EA.
+ E5 C3 01 64 94 97 48 F1|...d..H.
+ A9 5D 7A 4C 31 79 A0 0D|.]zL1y..
+ 18 08 83 C9 67 CA FB 68|....g..h
+
+<info> app: Verify (OID): PASS
+<info> app: Verify (EXT): PASS
+<info> app: Secure DFU Example done.
+
+<info> app: Secure DFU finished
+
+<info> app: Key derivation not supported!
+
+<info> app: Key derivation finished
+
+<info> app: Infineon OPTIGA(TM) Trust X example executed successfully.
+
+
+
+
+
+
