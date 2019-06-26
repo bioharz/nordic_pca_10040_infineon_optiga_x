@@ -764,10 +764,17 @@ int main(void)
 
     NRF_LOG_INFO("Printing coprocessor information finished\r\n");
     
-    //Reza - extract public key
-    NRF_LOG_INFO("Reza: Extract public key\r\n");
-    optiga_util_real_data(0xE0E0, 0, certif, &certiLen);
-    pr_hex(certif, certiLen);
+    {
+      //Reza - extract public key
+      uint8_t   certif[4000];
+      uint16_t  certiLen;
+
+      certiLen = 3800;
+
+      NRF_LOG_INFO("Reza: Extract public key\r\n");
+      optiga_util_read_data(0xE0E0, 0, certif, &certiLen);
+      pr_hex(certif, certiLen);
+    }
 
     uc_gen_keypair_export_public();
 
