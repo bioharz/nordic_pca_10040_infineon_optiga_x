@@ -163,7 +163,8 @@ static void uc_print_coprocessor_information(void)
     NRF_LOG_INFO("Trust X firmware version (from coprocessor UID): %2x%2x\r\n", (uint16_t) data[25], (uint16_t) data[26]);
 
     // Remove the comment to print the binary data of the coprocessor information
-    NRF_LOG_HEXDUMP_INFO( data[17], 7);
+    //NRF_LOG_HEXDUMP_INFO( data[17], 7);
+    NRF_LOG_HEXDUMP_INFO( data, 24);
 
 }
 
