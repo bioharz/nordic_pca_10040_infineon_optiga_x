@@ -67,7 +67,10 @@ pal_i2c_t optiga_pal_i2c_context_0 =
 pal_gpio_t optiga_vdd_0 =
 {
     // Platform specific GPIO context for the pin used to toggle Vdd.
+    // Reza: Optiga X TrustX 0 enable
     (void*)ARDUINO_9_PIN  // Power pin for the onboard OPTIGA
+    // Reza: Optiga X TrustX 1 enable
+    //(void*)ARDUINO_10_PIN  // Power pin for the onboard OPTIGA
 };
 
 /**

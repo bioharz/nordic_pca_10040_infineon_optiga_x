@@ -60,9 +60,13 @@ void pal_gpio_init()
     // Init power pins
     nrf_gpio_cfg_output((uint32_t)optiga_vdd_0.p_gpio_hw);
 
+    //Reza: Optiga X TrustX 0 enable
     // Set power pins to enable power
     nrf_gpio_pin_set((uint32_t)optiga_vdd_0.p_gpio_hw); // Enable power for onboard OPTIGA
 
+    //Reza: Optiga X TrustX 1 enable
+    //nrf_gpio_cfg_output(ARDUINO_9_PIN);
+    //nrf_gpio_pin_clear(ARDUINO_9_PIN);
 
     // Init reset pin
     nrf_gpio_cfg_output((uint32_t)(optiga_reset_0.p_gpio_hw));
