@@ -163,8 +163,8 @@ static void uc_print_coprocessor_information(void)
     NRF_LOG_INFO("Trust X firmware version (from coprocessor UID): %2x%2x\r\n", (uint16_t) data[25], (uint16_t) data[26]);
 
     // Remove the comment to print the binary data of the coprocessor information
-    NRF_LOG_INFO("Trust X UID:");
-    NRF_LOG_HEXDUMP_INFO(data, 18, 23);
+    NRF_LOG_HEXDUMP_INFO( data[17], 7);
+
 }
 
 static void uc_key_derivation(void)
@@ -312,6 +312,7 @@ static void uc_sign(uint8_t * p_sig, size_t * sig_len)
     NRF_LOG_INFO("Signing hash");
     NRF_LOG_FLUSH();
 
+    //Reza
     // Pass OPTIGA key OID into nrf_cyrpto API
     nrf_crypto_ecc_private_key_t private_key = NRF_CRYPTO_INFINEON_SECP256R1_PRIVATE_KEY_FROM_OID(OPTIGA_KEY_STORE_ID_E0F0);
 
@@ -793,6 +794,7 @@ int main(void)
     NRF_LOG_INFO("Certificate write finished\r\n");
     NRF_LOG_FLUSH();
 
+    //Reza
     size_t sig_len = NRF_CRYPTO_ECDSA_SECP256R1_SIGNATURE_SIZE;
     uint8_t sig[NRF_CRYPTO_ECDSA_SECP256R1_SIGNATURE_SIZE] = {0};
 
