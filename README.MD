@@ -10,3 +10,5 @@ https://www.segger.com/news/segger-embedded-studio-ide-now-free-for-nordic-sdk-u
 https://www.segger.com/products/development-tools/embedded-studio/
 
 https://github.com/Infineon/optiga-trust-x
+
+https://github.com/Infineon/personalize-optiga-trust-x
